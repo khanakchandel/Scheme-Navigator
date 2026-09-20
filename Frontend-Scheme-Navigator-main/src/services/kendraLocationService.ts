@@ -147,7 +147,7 @@ const APIMITRA_BASE_URL = 'https://api.apimitra.in';
 const APIMITRA_API_KEY =
   (typeof import.meta !== 'undefined' && import.meta.env?.VITE_APIMITRA_API_KEY
     ? (import.meta.env.VITE_APIMITRA_API_KEY as string).trim()
-    : '') || 'apk_8b382259bd5ba7212b07ec22efbd4b83eac2';
+    : '');
 
 const DEFAULT_HEADERS = {
   Accept: 'application/json',

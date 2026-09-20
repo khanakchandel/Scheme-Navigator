@@ -36,6 +36,7 @@ jobs:
         working-directory: ./Frontend-Scheme-Navigator-main
         env:
           VITE_API_BASE_URL: ''
+          VITE_APIMITRA_API_KEY: ${{ secrets.VITE_APIMITRA_API_KEY }}
         run: npm run build
 
       - name: Upload Pages Artifact
